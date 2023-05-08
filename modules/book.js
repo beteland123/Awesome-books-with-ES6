@@ -49,7 +49,6 @@ class Books {
     }
   }
   
-  const booksObj = new Books();
 
 
   export {Books} ;
