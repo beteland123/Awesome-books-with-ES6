@@ -55,7 +55,7 @@
 - **a collection that keeps a list of books**
 - **Button interactions (i.e. hover, etc.)**
 - **data is preserved in the browser's memory by using localStorage**
-- **use lucon to gt the current date**
+- **use luxon to gt the current date**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,7 +111,7 @@ Example command:
 --->
 
 ### Usage
-"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. View [my portfolio website](/)
+"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. 
 
 
 
