@@ -4,7 +4,7 @@ class Books  {
         this.books = JSON.parse(localStorage.getItem('books') || '[]');
     }
   
-    addBook(title, author) {
+    addBook =(title, author) => {
         const book = {
             id: this.books.length + 1,
             title,
@@ -27,7 +27,7 @@ if (rem !==-1){
         
       }
     
-      displayBookList() {
+      displayBookList = () => {
         // Clear the book list element
         bookListElement.innerHTML = '<h2>All Awesome books</h2>';
         const booksContainer = document.createElement('div');
