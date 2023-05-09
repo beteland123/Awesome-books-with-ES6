@@ -9,6 +9,7 @@ import { bookShow, formShow, contactShow } from './modules/navMenu.js';
 
 import {Books} from './modules/book.js';
 //import {bookAdder} from './modules/addBook.js'
+import newDate from './modules/date.js';
 const booksObj = new Books();
 booksObj.displayBookList();
 
@@ -36,3 +37,4 @@ listLink.addEventListener('click', bookShow);
 addLink.addEventListener('click', formShow);
 
 contactLink.addEventListener('click', contactShow);
+setInterval(newDate, 1000);
