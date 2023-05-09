@@ -178,7 +178,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Braingenius2/Awesome-books/issues).
+Feel free to check the [issues page](https://github.com/beteland123/Awesome-books-with-ES6/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,5 +203,5 @@ I would like to thank myself and Microverse!
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](https://github.com/beteland123/Awesome-books-with-ES6/blob/main/LICENSE) licensed.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
