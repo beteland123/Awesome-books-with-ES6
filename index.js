@@ -1,7 +1,6 @@
 import { bookShow, formShow, contactShow } from './modules/navMenu.js';
 
 import Books from './modules/book.js';
-// import {bookAdder} from './modules/addBook.js'
 import newDate from './modules/date.js';
 
 const addButtonElement = document.getElementById('add-btn');
@@ -10,7 +9,6 @@ const authorInputElement = document.getElementById('author-input');
 const listLink = document.querySelector('.list-link');
 const addLink = document.querySelector('.add-link');
 const contactLink = document.querySelector('.contact-link');
-
 const booksObj = new Books();
 booksObj.displayBookList();
 

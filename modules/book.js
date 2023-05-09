@@ -1,6 +1,7 @@
 const bookListElement = document.getElementById('book-list');
-class Books {
+class Books extends Array {
   constructor() {
+    super();
     this.books = JSON.parse(localStorage.getItem('books') || '[]');
   }
 
@@ -14,14 +15,14 @@ class Books {
       localStorage.setItem('books', JSON.stringify(this.books));
     }
 
-      removeBook = (id) => {
-        const rem = this.books.filter((book) => book.id === Number(id));
-        if (rem !== -1) {
-          this.books.splice(rem, 1);
-          localStorage.setItem('books', JSON.stringify(this.books));
-        }
-        this.displayBookList();
+    removeBook = (id) => {
+      const index = this.books.findIndex((book) => book.id === Number(id));
+      if (index !== -1) {
+        this.books.splice(index, 1);
+        localStorage.setItem('books', JSON.stringify(this.books));
       }
+      this.displayBookList();
+    }
 
       displayBookList = () => {
         // Clear the book list element
@@ -37,7 +38,7 @@ class Books {
           removeButton.textContent = 'Remove';
           removeButton.id = book.id;
           removeButton.addEventListener('click', (event) => {
-            const { id } = event.target.dataset;
+            const { id } = event.target;
             this.removeBook(id);
             this.displayBookList();
           });
