@@ -55,7 +55,7 @@
 - **a collection that keeps a list of books**
 - **Button interactions (i.e. hover, etc.)**
 - **data is preserved in the browser's memory by using localStorage**
-- **use lucon to gt the current date**
+- **use luxon to gt the current date**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,7 +111,7 @@ Example command:
 --->
 
 ### Usage
-"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. View [my portfolio website](/)
+"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. 
 
 
 
@@ -178,7 +178,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Braingenius2/Awesome-books/issues).
+Feel free to check the [issues page](https://github.com/beteland123/Awesome-books-with-ES6/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,5 +203,5 @@ I would like to thank myself and Microverse!
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](https://github.com/beteland123/Awesome-books-with-ES6/blob/main/LICENSE) licensed.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
