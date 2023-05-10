@@ -6,8 +6,9 @@ class Books extends Array {
   }
 
     addBook =(title, author) => {
+      const uniqueNumber = Math.floor(Math.random() * 1000000);
       const book = {
-        id: this.books.length + 1,
+        id: uniqueNumber,
         title,
         author,
       };
@@ -15,13 +16,11 @@ class Books extends Array {
       localStorage.setItem('books', JSON.stringify(this.books));
     }
 
-    removeBook = (id) => {
-      const index = this.books.findIndex((book) => book.id === Number(id));
-      if (index !== -1) {
-        this.books.splice(index, 1);
-        localStorage.setItem('books', JSON.stringify(this.books));
-      }
-      this.displayBookList();
+    removeBook(id) {
+      this.books = this.books.filter((book) => book.id !== parseInt(id, 10));
+      let localStorageBooks = JSON.parse(localStorage.getItem('books'));
+      localStorageBooks = localStorageBooks.filter((obj) => obj.id !== parseInt(id, 10));
+      localStorage.setItem('books', JSON.stringify(localStorageBooks));
     }
 
       displayBookList = () => {
